@@ -7,7 +7,7 @@ html {
 body {
   min-height: 100%;
   min-width: 100%;
-  background: linear-gradient(pink, violet);
+  background: linear-gradient(rgb(16, 12, 231), rgb(21, 10, 99));
 }
 
 button {
@@ -20,11 +20,11 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid #333;
+  border: none;
   background: rgba(255, 255, 255, 0.3);
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  box-shadow: 2px 5px 5px #3333333e;
 }
 
 #list {
@@ -33,5 +33,41 @@ button {
   background: rgba(255, 255, 255, 0.75);
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  box-shadow: 2px 3px 3px #333;
+  width: 500px;
+}
+#list ul li {
+  list-style-type: none;
+}
+
+
+h2{
+  color: rgb(21,10,99);
+  text-align: center;
+  font-weight: 300px;
+}
+#tasks{
+  text-decoration: none;
+  cursor: pointer;
+}
+#tasks.completed{
+  text-decoration: line-through;
+}
+
+#tasks button{
+  margin-left: 20px;
+}
+#submitbtn{
+  transition: 0.3s;
+  font-size: 20px; 
+}
+#submitbtn:hover{
+  background-color: rgb(21,10,99);
+  color: white;
+}
+#new-task-description{
+  font-size: 20px;
+}
+label{
+  font-size: 23px;
 }
