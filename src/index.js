@@ -23,7 +23,7 @@ function buildToDo(task){
   console.log(p);
   document.querySelector('#tasks').appendChild(taskItem);
 }
-buildToDo('Take out the trash');
+buildToDo();
 
 function handleDelete(e){
   e.target.parentNode.remove()
